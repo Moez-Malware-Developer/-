@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin-top: 60px; /* لتجنب تداخل الهيدر */
+        }
+        .header-custom {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+           
+        }
+        .svg-image {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+           
+            
+        }
+        .nav-pills .nav-link {
+            color: rgb(7, 7, 7);
+            margin-right: 20px;
+            border-radius: 5px;
+            font-size: 18px; /* تكبير حجم الخط */
+            
+        }
+        .nav-pills .nav-link.active, 
+        .nav-pills .nav-link:focus, 
+        .nav-pills .nav-link:hover {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center; /* جعل الأقسام في الوسط */
+            flex-wrap: wrap;
+        }
+        .checkbtn{
+          font-size: 30px;
+          color: #ffffff;
+          float: right;
+          line-height: 75px;
+          margin-right: 20px;
+          cursor: pointer;
+          display: none;
+          transition: 0.5;
+        }
+        #check{
+          display: none;
+        }
+         
+        @media (max-width:970px) {
+          .svg-image {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: #f1f1f1;
+        }
+        .nav-pills .nav-link {
+          color: rgb(7, 7, 7);
+            margin-right: 10px;
+            border-radius: 5px;
+            font-size: 15px; 
+        }
+          
+        }
+        @media (max-width:865px) {
+          .checkbtn{
+            display: block;
+          }
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- الهيدر -->
+
+<header class="header-custom py-3">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fa fa-bars"></i>
+  </label>
+  <div class="container d-flex flex-wrap justify-content-between align-items-center">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
+      <img src="../../M-Boh-zra/public/img/imges/photo_2024-11-02_20-15-58.jpg" alt="الشعار" style="height: 80px; width: 380px; box-shadow: 0 4px 8px #ffffff; margin-top: -2px;">
+
+    </a>
+
+
+    <style>
+      /* لضبط العرض بشكل ملائم */
+      .dropdown-submenu {
+          position: relative;
+      }
+      .dropdown-submenu .dropdown-menu {
+          top: 0;
+          right: 100%; /* يظهر القائمة الفرعية على اليسار */
+          margin-top: -1px;
+      }
+  </style>
+</head>
+<body>
+
+  <style>
+    /* تنسيق للقائمة الجانبية */
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+    }
+</style>
+
+<style>
+  /* تنسيق للقائمة الجانبية */
+  .dropdown-submenu {
+      position: relative;
+  }
+
+  /* لضبط القائمة المنسدلة الجانبية */
+  .dropdown-submenu:hover .dropdown-menu {
+      display: block;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      margin-top: 0;
+      
+  }
+</style>
+
+<style>
+  /* إبعاد شريط التنقل نحو اليمين */
+  .navbar {
+    margin-right: 20px; /* يمكنك تغيير القيمة حسب المسافة المطلوبة */
+  }
+  
+  /* محاذاة القائمة بأكملها إلى اليمين */
+  .navbar .nav {
+    float: right;
+  }
+  /* تكبير حقول القائمة المنسدلة */
+  .dropdown-menu .dropdown-item {
+    font-size: 1.2em; /* تكبير حجم الخط */
+    padding: 10px 20px; /* زيادة المساحة الداخلية للحقول */
+  }
+
+  /* زيادة عرض وارتفاع القائمة */
+  .dropdown-menu {
+    min-width: 200px; /* تكبير عرض القائمة */
+  }
+
+
+</style>
+
+<nav class="navbar" style="padding: 20 30;">
+  <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active">الرئيسية</a></li>
+      <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">عن المركز</a>
+          <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">الأفرع</a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">فرع تونس</a></li>
+                      <li><a class="dropdown-item" href="#">فرع مصر</a></li>
+                  </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">الرؤية و الرساله</a></li>
+              <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">الإدارات</a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">إدارة البحوث والدراسات</a></li>
+                      <li><a class="dropdown-item" href="#">إدارة الشؤون الفنية</a></li>
+                      <li><a class="dropdown-item" href="#">إدارة الشؤون الأدارية والماية</a></li>
+                      <li><a class="dropdown-item" href="#">إدارة الأعلام والأرشاد </a></li>
+                      <li><a class="dropdown-item" href="#">إدارة نظم المعلومات والتويق</a></li>
+                      <li><a class="dropdown-item" href="#">إدارة تنمية الموارد ة</a></li>
+                      <li><a class="dropdown-item" href="#">إدارة البحوث الأفتصاديةة</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">الابحاث</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+                <li><a class="dropdown-item" href="#">ابحاث الحيوانيه</a></li>
+                <li><a class="dropdown-item" href="#">ابحاث الزراعيه </a></li>
+            </li>
+            
+        </ul>
+    </li>
+      <li class="nav-item"><a href="#" class="nav-link">الاخبار</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">التقارير</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">تواصل معنا</a></li>
+  </ul>
+</nav>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src=".img-1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./1.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
